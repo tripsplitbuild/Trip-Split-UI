@@ -146,7 +146,6 @@ html {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: #502D55;
-  min-height: 100vh;
 }
 ul {
   list-style-type: disc;
@@ -190,7 +189,7 @@ header .logo {
   height: 100%;
 }
 .info-section .content {
-  width: calc(50% - 5em);
+  width: 50%;
   background: none;
   box-sizing: border-box;
   display: flex;
@@ -208,9 +207,10 @@ header .logo {
 .info-section .content p {
   color: white;
   font-size: 2.5em;
+  margin-top: 0.5em;
 }
 .info-section .image-box {
-  width: calc(50% + 5em);
+  width: 50%;
   background: url('../imgs/adults-black-and-white-casual-1374542.jpg');
   box-sizing: border-box;
 }
@@ -221,7 +221,7 @@ header .logo {
 }
 .sign-up-section .learn-more {
   background: white;
-  width: calc(50% - 5em);
+  width: 50%;
   height: auto;
   display: flex;
   align-content: center;
@@ -252,8 +252,12 @@ header .logo {
   background: #502D55;
   color: white;
 }
+.sign-up-section .learn-more .learn-more-btn:active {
+  transform: translateY(5px);
+  outline: none;
+}
 .sign-up-section .newsletter {
-  width: calc(50% + 5em);
+  width: 50%;
   height: auto;
   display: block;
   display: flex;
@@ -299,4 +303,32 @@ header .logo {
 .sign-up-section .newsletter .sign-up-btn:active {
   transform: translateY(5px);
   outline: none;
+}
+@media (max-width: 750px) {
+  .info-section,
+  .sign-up-section {
+    display: block;
+  }
+  .info-section .content,
+  .info-section .image-box {
+    width: 100%;
+    min-height: 30em;
+  }
+  .sign-up-section .learn-more,
+  .sign-up-section .newsletter {
+    width: 100%;
+    min-height: 30em;
+  }
+}
+@media (max-width: 999px) {
+  .info-section .content {
+    width: 100%;
+    box-shadow: none;
+  }
+  .info-section .image-box {
+    display: none;
+  }
+  .sign-up-section .newsletter {
+    box-shadow: none;
+  }
 }

@@ -2,7 +2,6 @@
   height: 40em;
   width: 100%;
   background: none;
-  // box-shadow: 0 5px 6px -6px black;
   display: flex;
 
   .content,
@@ -11,7 +10,7 @@
   }
 
   .content {
-    width: calc(50% - 5em);
+    width: 50%;
     background: none;
     box-sizing: border-box;
     .center();
@@ -28,11 +27,12 @@
     p {
       color: white;
       font-size: 2.5em;
+      margin-top: .5em;
     }
   }
 
   .image-box {
-    width: calc(50% + 5em);
+    width: 50%;
     background: url('../imgs/adults-black-and-white-casual-1374542.jpg');
     box-sizing: border-box;
   }
@@ -45,7 +45,7 @@
 
   .learn-more {
     background: white;
-    width: calc(50% - 5em);
+    width: 50%;
     height: auto;
     .center();
     flex-direction: column;
@@ -72,11 +72,16 @@
         background: @dark-purple;
         color: white;
       }
+
+      &:active {
+        transform: translateY(5px);
+        outline: none;
+      }
     }
   }
 
   .newsletter {
-    width: calc(50% + 5em);
+    width: 50%;
     height: auto;
     display: block;
     .center();
@@ -125,6 +130,49 @@
         transform: translateY(5px);
         outline: none;
       }
+    }
+  }
+}
+
+@media @mobile {
+
+  .info-section,
+  .sign-up-section {
+    display: block;
+  }
+
+  .info-section {
+
+    .content,
+    .image-box {
+      width: 100%;
+      min-height: 30em;
+    }
+  }
+
+  .sign-up-section {
+
+    .learn-more,
+    .newsletter {
+      width: 100%;
+      min-height: 30em;
+    }
+  }
+}
+
+@media @tablet {
+  .info-section {
+    .content {
+      width: 100%;
+      box-shadow: none;
+    }
+    .image-box {
+      display: none;
+    }
+  }
+  .sign-up-section {
+    .newsletter {
+      box-shadow: none;
     }
   }
 }
