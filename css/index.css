@@ -370,6 +370,63 @@ header .logo {
 .reminder-section p {
   font-size: 2.1em;
   margin-top: 0.3em;
+  text-align: center;
+}
+.team {
+  height: 15em;
+  color: white;
+  background: #502D55;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.team .team-btn {
+  height: 5em;
+  width: 16em;
+  color: #502D55;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 2em;
+  outline: none;
+  transition: 0.25s ease-in-out;
+}
+.team .team-btn:hover {
+  color: white;
+  background: #502D55;
+  border: 1px solid white;
+}
+.team .team-btn:active {
+  outline: none;
+  transform: translateY(5px);
+}
+.members {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.members .team-members {
+  display: block;
+  padding: 10em;
+}
+.members .team-members .member {
+  width: 100%;
+  text-align: center;
+  margin: 2em 0;
+}
+.members .team-members .member .member-name {
+  color: #5E614C;
+  font-size: 3.5em;
+}
+.members .team-members .member .member-occupation {
+  color: #BA183B;
+  font-size: 2em;
+}
+.members .team-members .member .github-handle {
+  color: #87833A;
+  font-size: 1.5em;
+  text-decoration: none;
 }
 @media (max-width: 750px) {
   .info-section,
