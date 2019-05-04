@@ -416,7 +416,7 @@ header .logo {
   margin: 2em 0;
 }
 .members .team-members .member .member-name {
-  color: #5E614C;
+  color: #fff;
   font-size: 3.5em;
 }
 .members .team-members .member .member-occupation {
@@ -437,6 +437,15 @@ header .logo {
   .info-section .image-box {
     width: 100%;
     min-height: 30em;
+  }
+  .easy-section .cards {
+    height: auto;
+    display: block;
+  }
+  .easy-section .cards .card {
+    width: 100%;
+    margin: 3em 0;
+    height: auto;
   }
   .sign-up-section .learn-more,
   .sign-up-section .newsletter {
